@@ -1,5 +1,5 @@
 .padding-90{
-    padding-bottom: 90px;
+    padding-bottom: 50px;
 }
 
 *{
@@ -9,6 +9,10 @@
 {
     padding-left: 0px;
     padding-top: 30px;
+}
+
+.img img{
+    width: 80%;
 }
 
 .text{
@@ -58,6 +62,20 @@
 {
     .text h1{
         font-size: 2.25rem;
+    }
+    .img img{
+        width: 100%;
+    }
+
+    .text{
+        padding-top: 20px;
+    }
+    .text-section{
+        text-align: center;
+    }
+
+    .button1{
+        margin: 15px;
     }
 }
 

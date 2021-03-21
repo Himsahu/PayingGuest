@@ -14,7 +14,6 @@ a:hover, a:active{
 }
  
 mat-toolbar{
-    border-radius: 3px;
     background-color: black;
 }
 
