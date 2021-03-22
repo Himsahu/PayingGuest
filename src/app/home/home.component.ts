@@ -1,4 +1,5 @@
-import { Component, OnInit } from '@angular/core';
+import { Component, OnInit, ViewChild } from '@angular/core';
+import { NgbPanelChangeEvent, NgbAccordion } from '@ng-bootstrap/ng-bootstrap';
 
 @Component({
   selector: 'app-home',
@@ -7,6 +8,7 @@ import { Component, OnInit } from '@angular/core';
 })
 export class HomeComponent implements OnInit {
 
+  @ViewChild('myaccordion', {static : true}) accordion: NgbAccordion;
   constructor() { }
 
   ngOnInit(): void {
@@ -14,5 +16,20 @@ export class HomeComponent implements OnInit {
 
   public executeSelectedChange = (event) => {
     console.log(event);
+  }
+
+  beforeChange($event: NgbPanelChangeEvent) {
+    console.log($event.panelId);
+    if ($event.panelId === 'panelOne') {
+      $event.preventDefault();
+    }
+
+    if ($event.panelId === 'panelTwo' && $event.nextState === false) {
+      $event.preventDefault();
+    }
+  }
+
+  togglePanel(id){
+    this.accordion.toggle(id);
   }
 }

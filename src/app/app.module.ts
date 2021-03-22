@@ -16,6 +16,7 @@ import { HeaderComponent } from './navigation/header/header.component';
 import { SidenavListComponent } from './navigation/sidenav-list/sidenav-list.component';
 import { MaterialModule } from './material/material.module';
 import { FlexLayoutModule } from '@angular/flex-layout';
+import { NgbModule } from '@ng-bootstrap/ng-bootstrap';
 
 @NgModule({
   declarations: [
@@ -30,7 +31,8 @@ import { FlexLayoutModule } from '@angular/flex-layout';
     AppRoutingModule,
     BrowserAnimationsModule,
     MaterialModule,
-    FlexLayoutModule
+    FlexLayoutModule,
+    NgbModule
   ],
   providers: [],
   exports:[
@@ -40,6 +42,6 @@ import { FlexLayoutModule } from '@angular/flex-layout';
     MatIconModule,
     MatListModule
   ],
-  bootstrap: [AppComponent]
+  bootstrap: [AppComponent, HomeComponent]
 })
 export class AppModule { }
