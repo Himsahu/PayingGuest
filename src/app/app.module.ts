@@ -17,7 +17,6 @@ import { SidenavListComponent } from './navigation/sidenav-list/sidenav-list.com
 import { MaterialModule } from './material/material.module';
 import { FlexLayoutModule } from '@angular/flex-layout';
 import { NgbModule } from '@ng-bootstrap/ng-bootstrap';
-
 @NgModule({
   declarations: [
     AppComponent,
@@ -40,8 +39,9 @@ import { NgbModule } from '@ng-bootstrap/ng-bootstrap';
     MatSidenavModule,
     MatToolbarModule,
     MatIconModule,
-    MatListModule
+    MatListModule,
   ],
   bootstrap: [AppComponent, HomeComponent]
 })
-export class AppModule { }
+export class AppModule {}
+
