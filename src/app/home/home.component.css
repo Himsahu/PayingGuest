@@ -70,6 +70,9 @@
     font-family: 'Oswald', sans-serif;
 }
 
+.btn{
+    text-decoration: none;
+}
 .title-text{
     font-style: italic;
     width: 864px;
