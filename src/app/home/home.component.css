@@ -247,6 +247,34 @@ button.calendar, button.calendar:active {
     padding: 10px 30px;
     align-self: flex-start;     
   }
+
+/* Creative team */
+
+.creative-heading{
+    font-size: 3.75rem;
+    width: 726px;
+    margin: 55px auto 0;
+    font-weight: 200;
+    letter-spacing: 3px;
+    font-family: 'Oswald', sans-serif;
+    line-height: 1.1;
+    text-align: center;
+}
+
+.section4 .container .row .u-text2{
+    font-style: italic;
+    width: 548px;
+    margin: 16px auto 0;
+    word-wrap: break-word;
+    position: relative;
+    text-align: center;
+    font-size: 29px;
+}
+
+.team-1-photo, .team-2-photo, .team-3-photo{
+    padding-top: 40px;
+}
+
 /* Responsive Mobile View */
 
 @media(max-width: 575px)
