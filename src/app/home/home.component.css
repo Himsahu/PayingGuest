@@ -182,13 +182,13 @@ button.calendar, button.calendar:active {
       color: white;
   }
 
-  .fa{
+  .social-icons .u-social-  url .fa{
       font-size: 30px;
       color: white;
       padding-left: 20px;
   }
 
-  .fa-facebook{
+  .social-cons .u-social-url .fa-facebook{
       padding-left: 0;
   }
   .container-image{      
@@ -275,6 +275,70 @@ button.calendar, button.calendar:active {
     padding-top: 40px;
 }
 
+.user-details{
+    min-height: 244px;
+    background-image: none;
+    margin: -66px auto 0;
+    color: white;
+    display: flex;
+
+}
+
+.details{
+    padding: 40px 20px 20px;
+    justify-content: flex-start;
+    display: flex;
+    flex-direction: column;
+    position: relative;
+    flex: 1;
+    max-width: 100%;
+    color: white;
+    text-align: center;
+    background-color: black;
+}
+
+.user-name{
+    text-transform: uppercase;
+    margin: 0 auto;
+    font-family: 'Oswald', sans-serif;
+    position: relative;
+    word-wrap: break-word;
+    font-size: 1.125rem;
+    line-height: 1.2;
+    font-weight: 300;
+    letter-spacing: 2px;
+}
+
+.user-position{
+    font-weight: 700;
+    letter-spacing: 1px;
+    margin: 10px auto 0;
+    font-family: 'PT Sans', sans-serif;
+    position: relative;
+    color: #e3252e !important;
+    word-wrap: break-word;
+    font-size: 1.125rem;
+    line-height: 1.2;
+}
+
+.social-icon{
+    white-space: nowrap;
+    height: 23px;
+    min-height: 16px;
+    width: 128px;
+    min-width: 32px;
+    margin: 30px auto 0;
+    display: flex;
+}
+
+.social-icon .u-social-url{
+    padding: 5px 5px;
+}
+.social-icon .u-social-url .fa{
+    color: white;
+    font-size: 30px;
+}
+
 /* Responsive Mobile View */
 
 @media(max-width: 575px)
@@ -340,5 +404,10 @@ button.calendar, button.calendar:active {
 
     .text h1{
         letter-spacing: 3px;
+    }
+
+    .user-details{
+        width: 233px;
+        margin-top: -28px;
     }
 }
