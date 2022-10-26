@@ -17,6 +17,8 @@ import { SidenavListComponent } from './navigation/sidenav-list/sidenav-list.com
 import { MaterialModule } from './material/material.module';
 import { FlexLayoutModule } from '@angular/flex-layout';
 import { NgbModule } from '@ng-bootstrap/ng-bootstrap';
+import { MapComponent } from './map/map.component';
+
 @NgModule({
   declarations: [
     AppComponent,
@@ -24,6 +26,7 @@ import { NgbModule } from '@ng-bootstrap/ng-bootstrap';
     LayoutComponent,
     HeaderComponent,
     SidenavListComponent,
+    MapComponent,
   ],
   imports: [
     BrowserModule,
@@ -31,7 +34,7 @@ import { NgbModule } from '@ng-bootstrap/ng-bootstrap';
     BrowserAnimationsModule,
     MaterialModule,
     FlexLayoutModule,
-    NgbModule
+    NgbModule,
   ],
   providers: [],
   exports:[
